@@ -8,6 +8,8 @@ body {
   align-items: center;
   justify-content: flex-center;
   flex-direction: column;
+  background: url(painting.jpg) no-repeat center center/cover; */
+
 }
 
 #message, #notes {
@@ -26,7 +28,7 @@ body {
 }
 
 .board div {
-  color: green;
+  color: #0D769D;
   font-size: 2rem;
   width: 75px;
   height: 75px;
@@ -48,7 +50,7 @@ div.mine, div.mine:hover {
 }
 
 div.hidden {
-  background: #eee;
+  background: #024372;
 }
 
 div.hidden:hover {
