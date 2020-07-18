@@ -8,7 +8,7 @@ body {
   align-items: center;
   justify-content: flex-center;
   flex-direction: column;
-  background: url(painting.jpg) no-repeat center center/cover; */
+  background: url(images/backg1.jpg) no-repeat center center/cover; 
 
 }
 
@@ -19,7 +19,8 @@ body {
 }
 
 #message {
-  font-size: 1.5rem;
+  font-size: 3rem;
+  color: #508B51
 }
 
 .board {
@@ -28,13 +29,13 @@ body {
 }
 
 .board div {
-  color: #0D769D;
+  color: #250336;
   font-size: 2rem;
   width: 75px;
   height: 75px;
   border: 1px #ccc dotted;
   border-radius: 10%;
-  background-color: white;
+  background-color: #F3F2EB;
   margin: 3px;
   display: flex;
   align-items: center;
@@ -42,19 +43,20 @@ body {
 }
 
 .board div:hover {
-  background-color: white;
+  background-color: #909BA8;
 }
 
 div.mine, div.mine:hover {
-  background: no-repeat center/60% url("images/bomb.svg") crimson;
+  background: no-repeat center/70% url("images/bomb.svg") #F26B72;
+  
 }
 
 div.hidden {
-  background: #024372;
+  background: #3AC7A3;
 }
 
 div.hidden:hover {
-  background: #ccc;
+  background: #774771;
 }
 
 div.marked, div.marked:hover {

@@ -13,26 +13,24 @@ function makeBoard(){
   board.cells = []
   for (let rowNum =0;rowNum < gridSize; rowNum++){
     for(let colNum =0; colNum < gridSize;  colNum++ ){
-      let cell ={
+      board.cells.push({
         row: rowNum,
         col: colNum,
         isMine: Math.round(Math.random() >= 0.7),
         isMarked: false,
         hidden: true
-      }
-      board.cells.push(cell)
+      })
+     
     }
   }
-  return board
 }
-
-
-
 function startGame () {
   makeBoard()
   // Don't remove this function call: it makes the game work!
+
   lib.initBoard()
 
+//assign mine count numbers to board
   for (let i = 0; i < board.cells.length; i++) {
     board.cells[i].surroundingMines = countSurroundingMines(board.cells[i]);
     board.cells[i].isMarked = false;
