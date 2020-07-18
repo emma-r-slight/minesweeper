@@ -1,6 +1,6 @@
 html, body {
   height: 100%;
-  font-family: 'Open Sans', sans-serif
+  font-family: 'Montserrat Alternates', sans-serif;
 }
 
 body {
@@ -19,21 +19,23 @@ body {
 }
 
 #message {
-  font-size: 3rem;
-  color: #508B51
+  font-size: 4rem;
+  color: #f26b72;
+  font-weight: bolder;
 }
 
 .board {
   display: flex;
   flex-wrap: wrap;
+  font-size: medium;
 }
 
 .board div {
-  color: #250336;
+  color: #3AC7A3;
   font-size: 2rem;
   width: 75px;
   height: 75px;
-  border: 1px #ccc dotted;
+  border: 1px #F26B72 dotted;
   border-radius: 10%;
   background-color: #F3F2EB;
   margin: 3px;
@@ -52,11 +54,11 @@ div.mine, div.mine:hover {
 }
 
 div.hidden {
-  background: #3AC7A3;
+  background: #EDCBBC;
 }
 
 div.hidden:hover {
-  background: #774771;
+  background: #3AC7A3;
 }
 
 div.marked, div.marked:hover {

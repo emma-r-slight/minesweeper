@@ -1,5 +1,10 @@
 document.addEventListener('DOMContentLoaded', startGame)
 
+//check to see if won!!
+document.addEventListener('click', checkForWin)
+document.addEventListener('contextmenu', checkForWin)
+
+
 // Define your `board` object here!
 let board = {}
 
