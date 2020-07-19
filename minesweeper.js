@@ -48,15 +48,17 @@ function startGame () {
 // 2. Are all of the mines marked?
 function checkForWin () {
   let youWin = true;
-  for (let square of board.cells){
-    if(board[square].isMine === true && 
-       board[square].ismarked === false){
+  for (let i = 0; i < board.cells.length; i++ ){
+    if(board.cells[i].isMine === true && 
+       board.cells[i].ismarked === false){
          youWin = false;
        }
-    if (board[square].isMine !== true &&
-        board[square].hidden === true) {
+    if (board.cells[i].isMine !== true &&
+        board.cells[i].hidden === true) {
           youWin = false
+          // console.log(youWin)
         }
+        
   }
   // detected that they've won.
   if (youWin){
