@@ -1,8 +1,8 @@
-html, body {
+html,
+body {
   height: 100%;
-  font-family: 'Montserrat Alternates', sans-serif;
-  background: url(images/backg1.jpg) no-repeat center; 
-
+  font-family: "Montserrat Alternates", sans-serif;
+  background: url(images/backg1.jpg) no-repeat center;
 }
 
 body {
@@ -10,10 +10,26 @@ body {
   align-items: center;
   justify-content: flex-center;
   flex-direction: column;
-
 }
 
-#message, #notes {
+button {
+  color: #3ac7a3;
+  background-color: #EDE1A7;
+  font-size: 1.5rem;
+  padding 0.5rem;
+  font-family: "Montserrat Alternates";
+  border: 2px #f26b72 dotted;
+  border-radius: 10%;
+  font-weight: bold;
+}
+
+#reset:hover {
+  cursor: pointer;
+  background-color: #edcbbc;
+}
+
+#message,
+#notes {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -29,16 +45,17 @@ body {
   display: flex;
   flex-wrap: wrap;
   font-size: medium;
+  padding-top: 2rem;
 }
 
 .board div {
-  color: #3AC7A3;
+  color: #3ac7a3;
   font-size: 2rem;
   width: 75px;
   height: 75px;
-  border: 1px #F26B72 dotted;
+  border: 2px #f26b72 dotted;
   border-radius: 10%;
-  background-color: #F3F2EB;
+  background-color: #f3f2eb;
   margin: 3px;
   display: flex;
   align-items: center;
@@ -46,22 +63,23 @@ body {
 }
 
 .board div:hover {
-  background-color: #909BA8;
+  background-color: #909ba8;
 }
 
-div.mine, div.mine:hover {
-  background: no-repeat center/70% url("images/bomb.svg") #F26B72;
-  
+div.mine,
+div.mine:hover {
+  background: no-repeat center/70% url("images/bomb.svg") #f26b72;
 }
 
 div.hidden {
-  background: #EDCBBC;
+  background: #edcbbc;
 }
 
 div.hidden:hover {
-  background: #3AC7A3;
+  background: #3ac7a3;
 }
 
-div.marked, div.marked:hover {
+div.marked,
+div.marked:hover {
   background: no-repeat center/60% url("images/mark.svg") deepskyblue;
 }
